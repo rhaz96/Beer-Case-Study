@@ -1052,4 +1052,4 @@ complete_beer_landscape[which(complete_beer_landscape$`Total Brewers` > 40), ]
 
 To maximize potential it is advisable to build breweries in states with few breweries but moderately high beer consumption.  Examples of such states include New Jersey, Tennessee, and South Carolina.  
 
-With Tennessee, we can experiment with a more bitter beer with a flavorful raspberry twist.  Call it the 'Tarty Tennesseean'.  An inital goal (a more conservative estimate) would be gaining at least 40% regional adoption within five years.   
+With Tennessee, we can experiment with a more bitter beer with a flavorful raspberry twist.  Call it the *Tarty Tennesseean*.  An inital goal (a more conservative estimate) would be gaining at least 40% regional adoption within five years.   
