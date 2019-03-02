@@ -1,14 +1,3 @@
----
-title: "Beer Analysis"
-author: "Robert Hazell"
-date: "2/27/2019"
-output: 
-  html_document:
-    keep_md: true
----
-
-
-
 ## XYZ Brewery Proposal
 
 ### Introduction
