@@ -646,7 +646,7 @@ sample estimates:
 0.6706215 
 ```
 
-At *r* = 0.67, this is indeed moderate, but not strong, positive correlation. The regression line illustrates that the variability may be changing along the prediction line (heteroscedasticity).  This correlation does not show causation as the relationship may be affect by third variables such as ingredients used, fermentation process, and marketing needs.
+At *r* = 0.67, this is indeed moderate, but not strong, positive correlation. The regression line illustrates that the variability may be changing along the prediction line (heteroscedasticity).  This correlation does not prove causation as the relationship may be affected by other variables such as ingredients used, fermentation process, and marketing needs.
 
 ### Integrating Beer Consumption
 
