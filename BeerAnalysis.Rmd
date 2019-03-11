@@ -4,7 +4,7 @@ author: "Robert Hazell"
 date: "2/27/2019"
 output:
   html_document:
-    keep_md: yes
+    keep_md: true
 ---
 
 ```{r include=FALSE} 

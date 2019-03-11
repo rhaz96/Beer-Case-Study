@@ -4,7 +4,7 @@ author: "Robert Hazell"
 date: "2/27/2019"
 output:
   html_document:
-    keep_md: yes
+    keep_md: true
 ---
 
 
@@ -688,7 +688,7 @@ for (row in national_consum){
   beer_values <- c(beer_values, total_consum_numeric)
 }
 
-# make the beer values the column values of nationa_consum
+# make the beer values the column values of national_consum
 national_consum$`Total Consumption` <- beer_values
 # remove row names bc of improper numbering
 rownames(national_consum) <- NULL
