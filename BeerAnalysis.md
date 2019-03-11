@@ -1,3 +1,14 @@
+---
+title: "Beer Analysis"
+author: "Robert Hazell"
+date: "2/27/2019"
+output:
+  html_document:
+    keep_md: yes
+---
+
+
+
 ## XYZ Brewery Proposal
 
 ### Introduction
@@ -646,7 +657,7 @@ sample estimates:
 0.6706215 
 ```
 
-At *r* = 0.67, this is indeed moderate, but not strong, positive correlation. The regression line illustrates that the variability may be changing along the prediction line (heteroscedasticity).  This correlation does not prove causation as the relationship may be affected by other variables such as ingredients used, fermentation process, and marketing needs.
+At *r* = 0.67, this is indeed moderate, but not strong, positive correlation. The regression line illustrates that the variability may be changing along the prediction line (heteroscedasticity).  This correlation does not show causation as the relationship may be affect by third variables such as ingredients used, fermentation process, and marketing needs.
 
 ### Integrating Beer Consumption
 
@@ -1052,4 +1063,4 @@ complete_beer_landscape[which(complete_beer_landscape$`Total Brewers` > 40), ]
 
 To maximize potential it is advisable to build breweries in states with few breweries but moderately high beer consumption.  Examples of such states include New Jersey, Tennessee, and South Carolina.  
 
-With Tennessee, we can experiment with a more bitter beer with a flavorful raspberry twist.  Call it the *Tarty Tennesseean*.  An inital goal (a more conservative estimate) would be gaining at least 40% regional adoption within five years.   
+With Tennessee, we can experiment with a more bitter beer with a flavorful raspberry twist.  Call it the 'Tarty Tennesseean'.  An inital goal (a more conservative estimate) would be gaining at least 40% regional adoption within five years.   
