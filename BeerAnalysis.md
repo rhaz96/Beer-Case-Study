@@ -1,3 +1,14 @@
+---
+title: "Beer Analysis"
+author: "Robert Hazell"
+date: "2/27/2019"
+output:
+  html_document:
+    keep_md: true
+---
+
+
+
 ## XYZ Brewery Proposal
 
 ### Introduction
@@ -22,7 +33,7 @@ The relevant datasets are *Beers.csv* and *Breweries.csv*.  Each will be loaded 
 
 
 ```r
-setwd("/Users/roberthazell/Desktop/DataScience@SMU/DoingDataScience/CaseStudy1")
+setwd("/Users/roberthazell/Desktop/DataScience@SMU/DoingDataScience/Beer-Case-Study")
 beers <- read.csv("beers.csv")
 brewers <- read.csv("breweries.csv")
 ```
@@ -672,7 +683,9 @@ national_consum$`Total Consumption` <- as.character(national_consum$`Total Consu
 
 beer_values = c() # holds the actual consumption values
 for (row in national_consum){
+  # extract the second sentence
   total_consum <- substring(row, first = str_locate(row, "Total")[1], last = str_locate(row, "5 yr.")[1] - 1)
+  # extract the real numbers from the second sentence (i.e, 24.6)
   total_consum_numeric <- regmatches(total_consum, regexpr('\\d+\\.+\\d', total_consum)) %>% as.numeric()
   beer_values <- c(beer_values, total_consum_numeric)
 }

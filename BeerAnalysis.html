@@ -400,7 +400,7 @@ $(document).ready(function () {
 <div id="competitive-landscape-how-many-craft-breweries-are-currently-producing-in-the-us" class="section level3">
 <h3>Competitive Landscape: How many craft breweries are currently producing in the US?</h3>
 <p>The relevant datasets are <em>Beers.csv</em> and <em>Breweries.csv</em>. Each will be loaded each into R after setting a working a directory.</p>
-<pre class="r"><code>setwd(&quot;/Users/roberthazell/Desktop/DataScience@SMU/DoingDataScience/CaseStudy1&quot;)
+<pre class="r"><code>setwd(&quot;/Users/roberthazell/Desktop/DataScience@SMU/DoingDataScience/Beer-Case-Study&quot;)
 beers &lt;- read.csv(&quot;beers.csv&quot;)
 brewers &lt;- read.csv(&quot;breweries.csv&quot;)</code></pre>
 <p>The total number of breweries can be found be inspecting the <code>State</code> column of <code>brewers</code>. There are 558 unique breweries in the U.S.</p>
@@ -1314,7 +1314,9 @@ national_consum$`Total Consumption` &lt;- as.character(national_consum$`Total Co
 
 beer_values = c() # holds the actual consumption values
 for (row in national_consum){
+  # extract the second sentence
   total_consum &lt;- substring(row, first = str_locate(row, &quot;Total&quot;)[1], last = str_locate(row, &quot;5 yr.&quot;)[1] - 1)
+  # extract the real numbers from the second sentence (i.e, 24.6)
   total_consum_numeric &lt;- regmatches(total_consum, regexpr('\\d+\\.+\\d', total_consum)) %&gt;% as.numeric()
   beer_values &lt;- c(beer_values, total_consum_numeric)
 }
