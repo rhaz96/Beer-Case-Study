@@ -6,4 +6,4 @@ This is my personal overhaul of the *Case-Study-1* project.  It includes updated
 
 Complete details about the Case Study can be found in the *Case Study 01.pdf* file.  As a recap, we're to pretend we're presenting a market analysis to a made-up client.  In this case, I and my team member (James Holdnack) postured ourselves as a start-up named *XYZ Brewery*, tasked with detailing which state(s) to build a brewery and beer offerings that should be made.
 
-The baseline datasets *Beers.csv* and *Breweries.csv* files are provided by Professor Faizan Javed of MSDS 6306 Doing Data Science.
+The baseline datasets *Beers.csv* and *Breweries.csv* are provided by Professor Faizan Javed of MSDS 6306 Doing Data Science.
